@@ -1,0 +1,30 @@
+div{
+    width : 90%;
+    margin : 0 auto;
+
+}
+
+#div_left{
+    width: 47%;
+    height : 100%;
+    float: left;
+    box-sizing: border-box;
+    /* background: #ff0; */
+    overflow: auto;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    
+}
+
+#div_right{
+    width: 47%;
+    height: 100%;
+    float: right;
+    box-sizing: border-box;
+    /* background: #0ff; */
+    overflow: auto;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    
+}
+

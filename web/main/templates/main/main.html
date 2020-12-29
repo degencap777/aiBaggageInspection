@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="{% static 'main/main.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form id="FILE_FORM" method="post" enctype="multipart/form-data" action="">
+            {% csrf_token %}
+            <input type="file" id="upload"/>
+        </form>
+        <button onclick="resultfunc()">결과보기</button>
+    </div>
+    <div style = "margin-top:20px; height:800px;">
+        <div id = "div_left">
+            <!-- <img src="{% static 'main/라미_편집.jpg' %}" alt=""> -->
+            <img id="image_section1" src="" alt="" width="80%" height="80%"/>
+        </div>
+        <div id = "div_right">
+            <img id="image_section2" src="" alt="" width="80%" height="80%"/>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
